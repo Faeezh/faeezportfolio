@@ -1,0 +1,48 @@
+nav {
+    width: 100vw;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    background: rgb(96, 96, 216)/*var(--color-primary)*/;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    /*box-shadow: 0 1rem 1.5rem rgb(79, 77, 206);*/
+    /*transition: var(--transition);*/
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.nav__menu a {
+    color: white;
+}
+
+#theme__icon {
+    background: transparent;
+    color: rgb(238, 127, 127);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* HIDE NAV MENU ON TABLETS AND PHONES */
+@media screen and (max-width: 1024px) {
+    .nav__menu {
+        display: none;
+    }
+}
